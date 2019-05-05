@@ -1,251 +1,166 @@
-2019-04-28 14:59:33,540 INFO [main] c.x.j.e.XxlJobExecutorApplication [StartupInfoLogger.java : 48] Starting XxlJobExecutorApplication on sunny with PID 52998 (/Users/sunny/project/xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/classes started by sunny in /Users/sunny/project/xxl-job)
-2019-04-28 14:59:33,544 INFO [main] c.x.j.e.XxlJobExecutorApplication [SpringApplication.java : 593] No active profile set, falling back to default profiles: default
-2019-04-28 14:59:33,788 INFO [background-preinit] o.h.validator.internal.util.Version [Version.java : 30] HV000001: Hibernate Validator 5.3.6.Final
-2019-04-28 14:59:33,950 INFO [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java : 583] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14d3bc22: startup date [Sun Apr 28 14:59:33 CST 2019]; root of context hierarchy
-2019-04-28 14:59:34,977 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java : 92] Tomcat initialized with port(s): 8081 (http)
-2019-04-28 14:59:34,989 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Initializing ProtocolHandler ["http-nio-8081"]
-2019-04-28 14:59:35,001 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 180] Starting service [Tomcat]
-2019-04-28 14:59:35,001 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 180] Starting Servlet Engine: Apache Tomcat/8.5.39
-2019-04-28 14:59:35,074 INFO [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java : 180] Initializing Spring embedded WebApplicationContext
-2019-04-28 14:59:35,075 INFO [localhost-startStop-1] o.s.web.context.ContextLoader [EmbeddedWebApplicationContext.java : 287] Root WebApplicationContext: initialization completed in 1125 ms
-2019-04-28 14:59:35,168 INFO [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java : 191] Mapping servlet: 'dispatcherServlet' to [/]
-2019-04-28 14:59:35,171 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 259] Mapping filter: 'characterEncodingFilter' to: [/*]
-2019-04-28 14:59:35,172 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 259] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2019-04-28 14:59:35,186 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 259] Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2019-04-28 14:59:35,186 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 259] Mapping filter: 'requestContextFilter' to: [/*]
-2019-04-28 14:59:35,238 INFO [main] c.x.j.e.core.config.XxlJobConfig [XxlJobConfig.java : 43] >>>>>>>>>>> xxl-job config init.
-2019-04-28 14:59:35,250 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 228] >>>>>>>>>>> xxl-job register jobhandler success, name:commandJobHandler, jobHandler:com.xxl.job.executor.service.jobhandler.CommandJobHandler@70925b45
-2019-04-28 14:59:35,251 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 228] >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.executor.service.jobhandler.DemoJobHandler@1b9ea3e3
-2019-04-28 14:59:35,251 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 228] >>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.executor.service.jobhandler.HttpJobHandler@aa22f1c
-2019-04-28 14:59:35,251 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 228] >>>>>>>>>>> xxl-job register jobhandler success, name:shardingJobHandler, jobHandler:com.xxl.job.executor.service.jobhandler.ShardingJobHandler@55e7a35c
-2019-04-28 14:59:35,287 INFO [main] c.x.r.r.p.XxlRpcProviderFactory [XxlRpcProviderFactory.java : 176] >>>>>>>>>>> xxl-rpc, provider factory add service success. serviceKey = com.xxl.job.core.biz.ExecutorBiz, serviceBean = class com.xxl.job.core.biz.impl.ExecutorBizImpl
-2019-04-28 14:59:35,468 INFO [Thread-9] com.xxl.rpc.remoting.net.Server [NettyHttpServer.java : 62] >>>>>>>>>>> xxl-rpc remoting server start success, nettype = com.xxl.rpc.remoting.net.impl.netty_http.server.NettyHttpServer, port = 9999
-2019-04-28 14:59:35,561 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java : 557] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14d3bc22: startup date [Sun Apr 28 14:59:33 CST 2019]; root of context hierarchy
-2019-04-28 14:59:35,627 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2019-04-28 14:59:35,628 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2019-04-28 14:59:35,653 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 364] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2019-04-28 14:59:35,654 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 364] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2019-04-28 14:59:35,684 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 364] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2019-04-28 14:59:35,865 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 431] Registering beans for JMX exposure on startup
-2019-04-28 14:59:35,879 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Starting ProtocolHandler ["http-nio-8081"]
-2019-04-28 14:59:35,879 INFO [main] o.a.tomcat.util.net.NioSelectorPool [DirectJDKLog.java : 180] Using a shared selector for servlet write/read
-2019-04-28 14:59:35,892 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java : 216] Tomcat started on port(s): 8081 (http)
-2019-04-28 14:59:35,898 INFO [main] c.x.j.e.XxlJobExecutorApplication [StartupInfoLogger.java : 57] Started XxlJobExecutorApplication in 2.578 seconds (JVM running for 3.248)
-2019-04-28 16:48:30,785 INFO [Thread-13] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java : 985] Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14d3bc22: startup date [Sun Apr 28 14:59:33 CST 2019]; root of context hierarchy
-2019-04-28 16:48:30,978 INFO [Thread-13] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 449] Unregistering JMX-exposed beans on shutdown
-2019-04-28 16:48:30,991 INFO [xxl-job, executor TriggerCallbackThread] c.x.j.c.thread.TriggerCallbackThread [TriggerCallbackThread.java : 96] >>>>>>>>>>> xxl-job, executor callback thread destory.
-2019-04-28 16:48:30,992 INFO [Thread-8] c.x.j.c.thread.TriggerCallbackThread [TriggerCallbackThread.java : 126] >>>>>>>>>>> xxl-job, executor retry callback thread destory.
-2019-04-28 16:48:30,997 INFO [Thread-9] com.xxl.rpc.remoting.net.Server [NettyHttpServer.java : 70] >>>>>>>>>>> xxl-rpc remoting server stop.
-2019-04-28 16:48:31,057 INFO [xxl-job, executor ExecutorRegistryThread] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 87] >>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='10.8.0.203:9999'}, registryResult:ReturnT [code=200, msg=null, content=null]
-2019-04-28 16:48:31,059 INFO [xxl-job, executor ExecutorRegistryThread] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 105] >>>>>>>>>>> xxl-job, executor registry thread destory.
-2019-04-28 16:48:31,071 INFO [Thread-13] com.xxl.rpc.remoting.net.Server [NettyHttpServer.java : 106] >>>>>>>>>>> xxl-rpc remoting server destroy success.
-2019-04-28 16:48:36,172 INFO [main] c.x.j.e.XxlJobExecutorApplication [StartupInfoLogger.java : 48] Starting XxlJobExecutorApplication on sunny with PID 57392 (/Users/sunny/project/xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/classes started by sunny in /Users/sunny/project/xxl-job)
-2019-04-28 16:48:36,179 INFO [main] c.x.j.e.XxlJobExecutorApplication [SpringApplication.java : 593] No active profile set, falling back to default profiles: default
-2019-04-28 16:48:36,293 INFO [background-preinit] o.h.validator.internal.util.Version [Version.java : 30] HV000001: Hibernate Validator 5.3.6.Final
-2019-04-28 16:48:36,619 INFO [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java : 583] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5a3bc7ed: startup date [Sun Apr 28 16:48:36 CST 2019]; root of context hierarchy
-2019-04-28 16:48:38,261 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java : 92] Tomcat initialized with port(s): 8081 (http)
-2019-04-28 16:48:38,281 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Initializing ProtocolHandler ["http-nio-8081"]
-2019-04-28 16:48:38,302 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 180] Starting service [Tomcat]
-2019-04-28 16:48:38,302 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 180] Starting Servlet Engine: Apache Tomcat/8.5.39
-2019-04-28 16:48:38,409 INFO [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java : 180] Initializing Spring embedded WebApplicationContext
-2019-04-28 16:48:38,409 INFO [localhost-startStop-1] o.s.web.context.ContextLoader [EmbeddedWebApplicationContext.java : 287] Root WebApplicationContext: initialization completed in 1790 ms
-2019-04-28 16:48:38,526 INFO [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java : 191] Mapping servlet: 'dispatcherServlet' to [/]
-2019-04-28 16:48:38,530 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 259] Mapping filter: 'characterEncodingFilter' to: [/*]
-2019-04-28 16:48:38,530 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 259] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2019-04-28 16:48:38,531 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 259] Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2019-04-28 16:48:38,531 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 259] Mapping filter: 'requestContextFilter' to: [/*]
-2019-04-28 16:48:38,589 INFO [main] c.x.j.e.core.config.XxlJobConfig [XxlJobConfig.java : 43] >>>>>>>>>>> xxl-job config init.
-2019-04-28 16:48:38,608 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 228] >>>>>>>>>>> xxl-job register jobhandler success, name:commandJobHandler, jobHandler:com.xxl.job.executor.service.jobhandler.CommandJobHandler@59e43e8c
-2019-04-28 16:48:38,608 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 228] >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.executor.service.jobhandler.DemoJobHandler@2caa5d7c
-2019-04-28 16:48:38,609 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 228] >>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.executor.service.jobhandler.HttpJobHandler@5e671e20
-2019-04-28 16:48:38,609 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 228] >>>>>>>>>>> xxl-job register jobhandler success, name:shardingJobHandler, jobHandler:com.xxl.job.executor.service.jobhandler.ShardingJobHandler@3eabe84a
-2019-04-28 16:48:38,682 INFO [main] c.x.r.r.p.XxlRpcProviderFactory [XxlRpcProviderFactory.java : 176] >>>>>>>>>>> xxl-rpc, provider factory add service success. serviceKey = com.xxl.job.core.biz.ExecutorBiz, serviceBean = class com.xxl.job.core.biz.impl.ExecutorBizImpl
-2019-04-28 16:48:39,010 INFO [Thread-11] com.xxl.rpc.remoting.net.Server [NettyHttpServer.java : 62] >>>>>>>>>>> xxl-rpc remoting server start success, nettype = com.xxl.rpc.remoting.net.impl.netty_http.server.NettyHttpServer, port = 9999
-2019-04-28 16:48:39,397 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java : 557] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5a3bc7ed: startup date [Sun Apr 28 16:48:36 CST 2019]; root of context hierarchy
-2019-04-28 16:48:39,489 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2019-04-28 16:48:39,491 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2019-04-28 16:48:39,546 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 364] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2019-04-28 16:48:39,546 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 364] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2019-04-28 16:48:39,602 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 364] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2019-04-28 16:48:39,928 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 431] Registering beans for JMX exposure on startup
-2019-04-28 16:48:39,941 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Starting ProtocolHandler ["http-nio-8081"]
-2019-04-28 16:48:39,942 INFO [main] o.a.tomcat.util.net.NioSelectorPool [DirectJDKLog.java : 180] Using a shared selector for servlet write/read
-2019-04-28 16:48:39,958 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java : 216] Tomcat started on port(s): 8081 (http)
-2019-04-28 16:48:39,964 INFO [main] c.x.j.e.XxlJobExecutorApplication [StartupInfoLogger.java : 57] Started XxlJobExecutorApplication in 4.373 seconds (JVM running for 7.021)
-2019-04-28 16:51:01,191 INFO [Thread-17] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java : 985] Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5a3bc7ed: startup date [Sun Apr 28 16:48:36 CST 2019]; root of context hierarchy
-2019-04-28 16:51:01,199 INFO [Thread-17] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 449] Unregistering JMX-exposed beans on shutdown
-2019-04-28 16:51:01,201 INFO [xxl-job, executor TriggerCallbackThread] c.x.j.c.thread.TriggerCallbackThread [TriggerCallbackThread.java : 96] >>>>>>>>>>> xxl-job, executor callback thread destory.
-2019-04-28 16:51:01,201 INFO [Thread-10] c.x.j.c.thread.TriggerCallbackThread [TriggerCallbackThread.java : 126] >>>>>>>>>>> xxl-job, executor retry callback thread destory.
-2019-04-28 16:51:01,202 INFO [Thread-11] com.xxl.rpc.remoting.net.Server [NettyHttpServer.java : 70] >>>>>>>>>>> xxl-rpc remoting server stop.
-2019-04-28 16:51:01,251 INFO [xxl-job, executor ExecutorRegistryThread] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 87] >>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='10.8.0.203:9999'}, registryResult:ReturnT [code=200, msg=null, content=null]
-2019-04-28 16:51:01,251 INFO [xxl-job, executor ExecutorRegistryThread] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 105] >>>>>>>>>>> xxl-job, executor registry thread destory.
-2019-04-28 16:51:01,251 INFO [Thread-17] com.xxl.rpc.remoting.net.Server [NettyHttpServer.java : 106] >>>>>>>>>>> xxl-rpc remoting server destroy success.
-2019-04-28 16:51:04,094 INFO [main] c.x.j.e.XxlJobExecutorApplication [StartupInfoLogger.java : 48] Starting XxlJobExecutorApplication on sunny with PID 57491 (/Users/sunny/project/xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/classes started by sunny in /Users/sunny/project/xxl-job)
-2019-04-28 16:51:04,099 INFO [main] c.x.j.e.XxlJobExecutorApplication [SpringApplication.java : 593] No active profile set, falling back to default profiles: default
-2019-04-28 16:51:04,208 INFO [background-preinit] o.h.validator.internal.util.Version [Version.java : 30] HV000001: Hibernate Validator 5.3.6.Final
-2019-04-28 16:51:04,516 INFO [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java : 583] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@58594a11: startup date [Sun Apr 28 16:51:04 CST 2019]; root of context hierarchy
-2019-04-28 16:51:05,598 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java : 92] Tomcat initialized with port(s): 8081 (http)
-2019-04-28 16:51:05,611 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Initializing ProtocolHandler ["http-nio-8081"]
-2019-04-28 16:51:05,624 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 180] Starting service [Tomcat]
-2019-04-28 16:51:05,625 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 180] Starting Servlet Engine: Apache Tomcat/8.5.39
-2019-04-28 16:51:05,704 INFO [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java : 180] Initializing Spring embedded WebApplicationContext
-2019-04-28 16:51:05,704 INFO [localhost-startStop-1] o.s.web.context.ContextLoader [EmbeddedWebApplicationContext.java : 287] Root WebApplicationContext: initialization completed in 1189 ms
-2019-04-28 16:51:05,808 INFO [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java : 191] Mapping servlet: 'dispatcherServlet' to [/]
-2019-04-28 16:51:05,811 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 259] Mapping filter: 'characterEncodingFilter' to: [/*]
-2019-04-28 16:51:05,811 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 259] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2019-04-28 16:51:05,811 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 259] Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2019-04-28 16:51:05,812 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 259] Mapping filter: 'requestContextFilter' to: [/*]
-2019-04-28 16:51:05,851 INFO [main] c.x.j.e.core.config.XxlJobConfig [XxlJobConfig.java : 43] >>>>>>>>>>> xxl-job config init.
-2019-04-28 16:51:05,862 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 228] >>>>>>>>>>> xxl-job register jobhandler success, name:commandJobHandler, jobHandler:com.xxl.job.executor.service.jobhandler.CommandJobHandler@6dfcffb5
-2019-04-28 16:51:05,862 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 228] >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.executor.service.jobhandler.DemoJobHandler@184fb68d
-2019-04-28 16:51:05,862 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 228] >>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.executor.service.jobhandler.HttpJobHandler@71d8cfe7
-2019-04-28 16:51:05,862 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 228] >>>>>>>>>>> xxl-job register jobhandler success, name:shardingJobHandler, jobHandler:com.xxl.job.executor.service.jobhandler.ShardingJobHandler@1e530163
-2019-04-28 16:51:05,887 INFO [main] c.x.r.r.p.XxlRpcProviderFactory [XxlRpcProviderFactory.java : 176] >>>>>>>>>>> xxl-rpc, provider factory add service success. serviceKey = com.xxl.job.core.biz.ExecutorBiz, serviceBean = class com.xxl.job.core.biz.impl.ExecutorBizImpl
-2019-04-28 16:51:06,049 INFO [Thread-9] com.xxl.rpc.remoting.net.Server [NettyHttpServer.java : 62] >>>>>>>>>>> xxl-rpc remoting server start success, nettype = com.xxl.rpc.remoting.net.impl.netty_http.server.NettyHttpServer, port = 9999
-2019-04-28 16:51:06,243 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java : 557] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@58594a11: startup date [Sun Apr 28 16:51:04 CST 2019]; root of context hierarchy
-2019-04-28 16:51:06,314 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2019-04-28 16:51:06,317 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2019-04-28 16:51:06,349 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 364] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2019-04-28 16:51:06,349 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 364] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2019-04-28 16:51:06,381 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 364] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2019-04-28 16:51:06,541 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 431] Registering beans for JMX exposure on startup
-2019-04-28 16:51:06,554 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Starting ProtocolHandler ["http-nio-8081"]
-2019-04-28 16:51:06,555 INFO [main] o.a.tomcat.util.net.NioSelectorPool [DirectJDKLog.java : 180] Using a shared selector for servlet write/read
-2019-04-28 16:51:06,566 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java : 216] Tomcat started on port(s): 8081 (http)
-2019-04-28 16:51:06,572 INFO [main] c.x.j.e.XxlJobExecutorApplication [StartupInfoLogger.java : 57] Started XxlJobExecutorApplication in 2.966 seconds (JVM running for 4.267)
-2019-04-28 16:51:36,733 INFO [Thread-13] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java : 985] Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@58594a11: startup date [Sun Apr 28 16:51:04 CST 2019]; root of context hierarchy
-2019-04-28 16:51:36,737 INFO [Thread-13] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 449] Unregistering JMX-exposed beans on shutdown
-2019-04-28 16:51:36,737 INFO [xxl-job, executor TriggerCallbackThread] c.x.j.c.thread.TriggerCallbackThread [TriggerCallbackThread.java : 96] >>>>>>>>>>> xxl-job, executor callback thread destory.
-2019-04-28 16:51:36,738 INFO [Thread-8] c.x.j.c.thread.TriggerCallbackThread [TriggerCallbackThread.java : 126] >>>>>>>>>>> xxl-job, executor retry callback thread destory.
-2019-04-28 16:51:36,738 INFO [Thread-9] com.xxl.rpc.remoting.net.Server [NettyHttpServer.java : 70] >>>>>>>>>>> xxl-rpc remoting server stop.
-2019-04-28 16:51:36,778 INFO [xxl-job, executor ExecutorRegistryThread] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 87] >>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='10.8.0.203:9999'}, registryResult:ReturnT [code=200, msg=null, content=null]
-2019-04-28 16:51:36,788 INFO [xxl-job, executor ExecutorRegistryThread] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 105] >>>>>>>>>>> xxl-job, executor registry thread destory.
-2019-04-28 16:51:36,789 INFO [Thread-13] com.xxl.rpc.remoting.net.Server [NettyHttpServer.java : 106] >>>>>>>>>>> xxl-rpc remoting server destroy success.
-2019-04-28 16:51:40,432 INFO [main] c.x.j.e.XxlJobExecutorApplication [StartupInfoLogger.java : 48] Starting XxlJobExecutorApplication on sunny with PID 57517 (/Users/sunny/project/xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/classes started by sunny in /Users/sunny/project/xxl-job)
-2019-04-28 16:51:40,436 INFO [main] c.x.j.e.XxlJobExecutorApplication [SpringApplication.java : 593] No active profile set, falling back to default profiles: default
-2019-04-28 16:51:40,595 INFO [background-preinit] o.h.validator.internal.util.Version [Version.java : 30] HV000001: Hibernate Validator 5.3.6.Final
-2019-04-28 16:51:40,895 INFO [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java : 583] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@62010f5c: startup date [Sun Apr 28 16:51:40 CST 2019]; root of context hierarchy
-2019-04-28 16:51:42,442 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java : 92] Tomcat initialized with port(s): 8081 (http)
-2019-04-28 16:51:42,455 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Initializing ProtocolHandler ["http-nio-8081"]
-2019-04-28 16:51:42,467 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 180] Starting service [Tomcat]
-2019-04-28 16:51:42,467 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 180] Starting Servlet Engine: Apache Tomcat/8.5.39
-2019-04-28 16:51:42,544 INFO [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java : 180] Initializing Spring embedded WebApplicationContext
-2019-04-28 16:51:42,544 INFO [localhost-startStop-1] o.s.web.context.ContextLoader [EmbeddedWebApplicationContext.java : 287] Root WebApplicationContext: initialization completed in 1649 ms
-2019-04-28 16:51:42,661 INFO [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java : 191] Mapping servlet: 'dispatcherServlet' to [/]
-2019-04-28 16:51:42,664 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 259] Mapping filter: 'characterEncodingFilter' to: [/*]
-2019-04-28 16:51:42,665 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 259] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2019-04-28 16:51:42,665 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 259] Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2019-04-28 16:51:42,665 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 259] Mapping filter: 'requestContextFilter' to: [/*]
-2019-04-28 16:51:42,709 INFO [main] c.x.j.e.core.config.XxlJobConfig [XxlJobConfig.java : 43] >>>>>>>>>>> xxl-job config init.
-2019-04-28 16:51:42,721 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 228] >>>>>>>>>>> xxl-job register jobhandler success, name:commandJobHandler, jobHandler:com.xxl.job.executor.service.jobhandler.CommandJobHandler@43a0a32d
-2019-04-28 16:51:42,721 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 228] >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.executor.service.jobhandler.DemoJobHandler@396ef8b2
-2019-04-28 16:51:42,721 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 228] >>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.executor.service.jobhandler.HttpJobHandler@72825400
-2019-04-28 16:51:42,721 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 228] >>>>>>>>>>> xxl-job register jobhandler success, name:shardingJobHandler, jobHandler:com.xxl.job.executor.service.jobhandler.ShardingJobHandler@19ee1ae6
-2019-04-28 16:51:42,751 INFO [main] c.x.r.r.p.XxlRpcProviderFactory [XxlRpcProviderFactory.java : 176] >>>>>>>>>>> xxl-rpc, provider factory add service success. serviceKey = com.xxl.job.core.biz.ExecutorBiz, serviceBean = class com.xxl.job.core.biz.impl.ExecutorBizImpl
-2019-04-28 16:51:42,912 INFO [Thread-10] com.xxl.rpc.remoting.net.Server [NettyHttpServer.java : 62] >>>>>>>>>>> xxl-rpc remoting server start success, nettype = com.xxl.rpc.remoting.net.impl.netty_http.server.NettyHttpServer, port = 9999
-2019-04-28 16:51:43,070 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java : 557] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@62010f5c: startup date [Sun Apr 28 16:51:40 CST 2019]; root of context hierarchy
-2019-04-28 16:51:43,124 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2019-04-28 16:51:43,125 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2019-04-28 16:51:43,153 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 364] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2019-04-28 16:51:43,153 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 364] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2019-04-28 16:51:43,183 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 364] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2019-04-28 16:51:43,357 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 431] Registering beans for JMX exposure on startup
-2019-04-28 16:51:43,367 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Starting ProtocolHandler ["http-nio-8081"]
-2019-04-28 16:51:43,368 INFO [main] o.a.tomcat.util.net.NioSelectorPool [DirectJDKLog.java : 180] Using a shared selector for servlet write/read
-2019-04-28 16:51:43,376 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java : 216] Tomcat started on port(s): 8081 (http)
-2019-04-28 16:51:43,381 INFO [main] c.x.j.e.XxlJobExecutorApplication [StartupInfoLogger.java : 57] Started XxlJobExecutorApplication in 3.595 seconds (JVM running for 5.488)
-2019-04-28 16:51:52,887 INFO [Thread-15] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java : 985] Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@62010f5c: startup date [Sun Apr 28 16:51:40 CST 2019]; root of context hierarchy
-2019-04-28 16:51:52,890 INFO [Thread-15] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 449] Unregistering JMX-exposed beans on shutdown
-2019-04-28 16:51:52,891 INFO [xxl-job, executor TriggerCallbackThread] c.x.j.c.thread.TriggerCallbackThread [TriggerCallbackThread.java : 96] >>>>>>>>>>> xxl-job, executor callback thread destory.
-2019-04-28 16:51:52,891 INFO [Thread-9] c.x.j.c.thread.TriggerCallbackThread [TriggerCallbackThread.java : 126] >>>>>>>>>>> xxl-job, executor retry callback thread destory.
-2019-04-28 16:51:52,892 INFO [Thread-10] com.xxl.rpc.remoting.net.Server [NettyHttpServer.java : 70] >>>>>>>>>>> xxl-rpc remoting server stop.
-2019-04-28 16:51:52,900 INFO [xxl-job, executor ExecutorRegistryThread] c.x.r.r.i.r.XxlRpcReferenceBean [XxlRpcReferenceBean.java : 225] >>>>>>>>>>> xxl-rpc, invoke error, address:http://127.0.0.1:8080/xxl-job-admin/api, XxlRpcRequestXxlRpcRequest{requestId='588fcac1-3239-48b4-8b6a-f5042ce28cf4', createMillisTime=1556441512892, accessToken='', className='com.xxl.job.core.biz.AdminBiz', methodName='registryRemove', parameterTypes=[class com.xxl.job.core.biz.model.RegistryParam], parameters=[RegistryParam{registGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='10.8.0.203:9999'}], version='null'}
-2019-04-28 16:51:52,901 INFO [xxl-job, executor ExecutorRegistryThread] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 105] >>>>>>>>>>> xxl-job, executor registry thread destory.
-2019-04-28 16:51:52,901 INFO [Thread-15] com.xxl.rpc.remoting.net.Server [NettyHttpServer.java : 106] >>>>>>>>>>> xxl-rpc remoting server destroy success.
-2019-04-28 16:51:59,011 INFO [main] c.x.j.e.XxlJobExecutorApplication [StartupInfoLogger.java : 48] Starting XxlJobExecutorApplication on sunny with PID 57538 (/Users/sunny/project/xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/classes started by sunny in /Users/sunny/project/xxl-job)
-2019-04-28 16:51:59,014 INFO [main] c.x.j.e.XxlJobExecutorApplication [SpringApplication.java : 593] No active profile set, falling back to default profiles: default
-2019-04-28 16:51:59,080 INFO [background-preinit] o.h.validator.internal.util.Version [Version.java : 30] HV000001: Hibernate Validator 5.3.6.Final
-2019-04-28 16:51:59,875 INFO [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java : 583] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14d3bc22: startup date [Sun Apr 28 16:51:59 CST 2019]; root of context hierarchy
-2019-04-28 16:52:01,578 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java : 92] Tomcat initialized with port(s): 8081 (http)
-2019-04-28 16:52:01,594 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Initializing ProtocolHandler ["http-nio-8081"]
-2019-04-28 16:52:01,617 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 180] Starting service [Tomcat]
-2019-04-28 16:52:01,618 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 180] Starting Servlet Engine: Apache Tomcat/8.5.39
-2019-04-28 16:52:01,708 INFO [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java : 180] Initializing Spring embedded WebApplicationContext
-2019-04-28 16:52:01,708 INFO [localhost-startStop-1] o.s.web.context.ContextLoader [EmbeddedWebApplicationContext.java : 287] Root WebApplicationContext: initialization completed in 1833 ms
-2019-04-28 16:52:01,847 INFO [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java : 191] Mapping servlet: 'dispatcherServlet' to [/]
-2019-04-28 16:52:01,850 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 259] Mapping filter: 'characterEncodingFilter' to: [/*]
-2019-04-28 16:52:01,850 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 259] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2019-04-28 16:52:01,850 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 259] Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2019-04-28 16:52:01,851 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java : 259] Mapping filter: 'requestContextFilter' to: [/*]
-2019-04-28 16:52:01,891 INFO [main] c.x.j.e.core.config.XxlJobConfig [XxlJobConfig.java : 43] >>>>>>>>>>> xxl-job config init.
-2019-04-28 16:52:01,907 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 228] >>>>>>>>>>> xxl-job register jobhandler success, name:commandJobHandler, jobHandler:com.xxl.job.executor.service.jobhandler.CommandJobHandler@3670f00
-2019-04-28 16:52:01,907 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 228] >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.executor.service.jobhandler.DemoJobHandler@452e26d0
-2019-04-28 16:52:01,907 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 228] >>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.executor.service.jobhandler.HttpJobHandler@46ab18da
-2019-04-28 16:52:01,908 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 228] >>>>>>>>>>> xxl-job register jobhandler success, name:shardingJobHandler, jobHandler:com.xxl.job.executor.service.jobhandler.ShardingJobHandler@790174f2
-2019-04-28 16:52:01,935 INFO [main] c.x.r.r.p.XxlRpcProviderFactory [XxlRpcProviderFactory.java : 176] >>>>>>>>>>> xxl-rpc, provider factory add service success. serviceKey = com.xxl.job.core.biz.ExecutorBiz, serviceBean = class com.xxl.job.core.biz.impl.ExecutorBizImpl
-2019-04-28 16:52:02,115 INFO [Thread-10] com.xxl.rpc.remoting.net.Server [NettyHttpServer.java : 62] >>>>>>>>>>> xxl-rpc remoting server start success, nettype = com.xxl.rpc.remoting.net.impl.netty_http.server.NettyHttpServer, port = 9999
-2019-04-28 16:52:02,188 INFO [xxl-job, executor ExecutorRegistryThread] c.x.r.r.i.r.XxlRpcReferenceBean [XxlRpcReferenceBean.java : 225] >>>>>>>>>>> xxl-rpc, invoke error, address:http://127.0.0.1:8080/xxl-job-admin/api, XxlRpcRequestXxlRpcRequest{requestId='129643f4-1c91-488d-9228-f1d31d9130d7', createMillisTime=1556441522118, accessToken='', className='com.xxl.job.core.biz.AdminBiz', methodName='registry', parameterTypes=[class com.xxl.job.core.biz.model.RegistryParam], parameters=[RegistryParam{registGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='10.8.0.203:9999'}], version='null'}
-2019-04-28 16:52:02,191 INFO [xxl-job, executor ExecutorRegistryThread] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 57] >>>>>>>>>>> xxl-job registry error, registryParam:RegistryParam{registGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='10.8.0.203:9999'}
-com.xxl.rpc.util.XxlRpcException: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /127.0.0.1:8080
-	at com.xxl.rpc.remoting.invoker.reference.XxlRpcReferenceBean$1.invoke(XxlRpcReferenceBean.java:227)
-	at com.sun.proxy.$Proxy57.registry(Unknown Source)
-	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:48)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /127.0.0.1:8080
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327)
-	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:670)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:617)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:534)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:906)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	... 1 common frames omitted
-Caused by: java.net.ConnectException: Connection refused
-	... 12 common frames omitted
-2019-04-28 16:52:02,210 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java : 557] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14d3bc22: startup date [Sun Apr 28 16:51:59 CST 2019]; root of context hierarchy
-2019-04-28 16:52:02,257 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2019-04-28 16:52:02,258 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java : 544] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2019-04-28 16:52:02,279 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 364] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2019-04-28 16:52:02,279 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 364] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2019-04-28 16:52:02,302 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java : 364] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2019-04-28 16:52:02,406 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 431] Registering beans for JMX exposure on startup
-2019-04-28 16:52:02,420 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 180] Starting ProtocolHandler ["http-nio-8081"]
-2019-04-28 16:52:02,421 INFO [main] o.a.tomcat.util.net.NioSelectorPool [DirectJDKLog.java : 180] Using a shared selector for servlet write/read
-2019-04-28 16:52:02,429 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java : 216] Tomcat started on port(s): 8081 (http)
-2019-04-28 16:52:02,436 INFO [main] c.x.j.e.XxlJobExecutorApplication [StartupInfoLogger.java : 57] Started XxlJobExecutorApplication in 3.86 seconds (JVM running for 5.022)
-2019-04-28 16:52:42,267 INFO [xxl-job, executor ExecutorRegistryThread] c.x.r.r.i.r.XxlRpcReferenceBean [XxlRpcReferenceBean.java : 225] >>>>>>>>>>> xxl-rpc, invoke error, address:http://127.0.0.1:8080/xxl-job-admin/api, XxlRpcRequestXxlRpcRequest{requestId='d64c080b-9824-47f1-bf44-791fad3db23d', createMillisTime=1556441552196, accessToken='', className='com.xxl.job.core.biz.AdminBiz', methodName='registry', parameterTypes=[class com.xxl.job.core.biz.model.RegistryParam], parameters=[RegistryParam{registGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='10.8.0.203:9999'}], version='null'}
-2019-04-28 16:52:42,274 INFO [xxl-job, executor ExecutorRegistryThread] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 57] >>>>>>>>>>> xxl-job registry error, registryParam:RegistryParam{registGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='10.8.0.203:9999'}
-com.xxl.rpc.util.XxlRpcException: xxl-rpc, request timeout at:1556441562266, request:XxlRpcRequest{requestId='d64c080b-9824-47f1-bf44-791fad3db23d', createMillisTime=1556441552196, accessToken='', className='com.xxl.job.core.biz.AdminBiz', methodName='registry', parameterTypes=[class com.xxl.job.core.biz.model.RegistryParam], parameters=[RegistryParam{registGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='10.8.0.203:9999'}], version='null'}
+2019-04-29 09:20:31,265 INFO [xxl-job, executor ExecutorRegistryThread] c.x.r.r.i.r.XxlRpcReferenceBean [XxlRpcReferenceBean.java : 225] >>>>>>>>>>> xxl-rpc, invoke error, address:http://127.0.0.1:8080/xxl-job-admin/api, XxlRpcRequestXxlRpcRequest{requestId='3763f943-59c4-4b07-9d29-c2914c5b3296', createMillisTime=1556494469447, accessToken='', className='com.xxl.job.core.biz.AdminBiz', methodName='registry', parameterTypes=[class com.xxl.job.core.biz.model.RegistryParam], parameters=[RegistryParam{registGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='10.8.0.203:9999'}], version='null'}
+2019-04-29 09:20:31,776 INFO [xxl-job, executor ExecutorRegistryThread] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 57] >>>>>>>>>>> xxl-job registry error, registryParam:RegistryParam{registGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='10.8.0.203:9999'}
+com.xxl.rpc.util.XxlRpcException: xxl-rpc, request timeout at:1556500830949, request:XxlRpcRequest{requestId='3763f943-59c4-4b07-9d29-c2914c5b3296', createMillisTime=1556494469447, accessToken='', className='com.xxl.job.core.biz.AdminBiz', methodName='registry', parameterTypes=[class com.xxl.job.core.biz.model.RegistryParam], parameters=[RegistryParam{registGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='10.8.0.203:9999'}], version='null'}
 	at com.xxl.rpc.remoting.net.params.XxlRpcFutureResponse.get(XxlRpcFutureResponse.java:117)
 	at com.xxl.rpc.remoting.invoker.reference.XxlRpcReferenceBean$1.invoke(XxlRpcReferenceBean.java:219)
 	at com.sun.proxy.$Proxy57.registry(Unknown Source)
 	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:48)
 	at java.lang.Thread.run(Thread.java:748)
-2019-04-28 16:53:22,286 INFO [xxl-job, executor ExecutorRegistryThread] c.x.r.r.i.r.XxlRpcReferenceBean [XxlRpcReferenceBean.java : 225] >>>>>>>>>>> xxl-rpc, invoke error, address:http://127.0.0.1:8080/xxl-job-admin/api, XxlRpcRequestXxlRpcRequest{requestId='7fe02adf-e7e0-4f1a-ad8a-94b1534812b5', createMillisTime=1556441592279, accessToken='', className='com.xxl.job.core.biz.AdminBiz', methodName='registry', parameterTypes=[class com.xxl.job.core.biz.model.RegistryParam], parameters=[RegistryParam{registGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='10.8.0.203:9999'}], version='null'}
-2019-04-28 16:53:22,287 INFO [xxl-job, executor ExecutorRegistryThread] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 57] >>>>>>>>>>> xxl-job registry error, registryParam:RegistryParam{registGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='10.8.0.203:9999'}
-com.xxl.rpc.util.XxlRpcException: xxl-rpc, request timeout at:1556441602286, request:XxlRpcRequest{requestId='7fe02adf-e7e0-4f1a-ad8a-94b1534812b5', createMillisTime=1556441592279, accessToken='', className='com.xxl.job.core.biz.AdminBiz', methodName='registry', parameterTypes=[class com.xxl.job.core.biz.model.RegistryParam], parameters=[RegistryParam{registGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='10.8.0.203:9999'}], version='null'}
-	at com.xxl.rpc.remoting.net.params.XxlRpcFutureResponse.get(XxlRpcFutureResponse.java:117)
-	at com.xxl.rpc.remoting.invoker.reference.XxlRpcReferenceBean$1.invoke(XxlRpcReferenceBean.java:219)
+2019-04-29 10:56:26,589 INFO [xxl-job, executor ExecutorRegistryThread] c.x.r.r.i.r.XxlRpcReferenceBean [XxlRpcReferenceBean.java : 225] >>>>>>>>>>> xxl-rpc, invoke error, address:http://127.0.0.1:8080/xxl-job-admin/api, XxlRpcRequestXxlRpcRequest{requestId='640c709a-88e1-49bc-8da0-20948fa24a46', createMillisTime=1556506582692, accessToken='', className='com.xxl.job.core.biz.AdminBiz', methodName='registry', parameterTypes=[class com.xxl.job.core.biz.model.RegistryParam], parameters=[RegistryParam{registGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='10.8.0.203:9999'}], version='null'}
+2019-04-29 10:56:26,594 INFO [xxl-job, executor ExecutorRegistryThread] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 57] >>>>>>>>>>> xxl-job registry error, registryParam:RegistryParam{registGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='10.8.0.203:9999'}
+com.xxl.rpc.util.XxlRpcException: java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor81.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.xxl.rpc.remoting.provider.XxlRpcProviderFactory.invokeService(XxlRpcProviderFactory.java:219)
+	at com.xxl.rpc.remoting.net.impl.servlet.server.ServletServerHandler.handle(ServletServerHandler.java:59)
+	at com.xxl.job.admin.core.schedule.XxlJobDynamicScheduler.invokeAdminService(XxlJobDynamicScheduler.java:120)
+	at com.xxl.job.admin.controller.JobApiController.api(JobApiController.java:30)
+	at sun.reflect.GeneratedMethodAccessor80.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:854)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:765)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:77)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy61.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:294)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:63)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy70.registryUpdate(Unknown Source)
+	at com.xxl.job.admin.service.impl.AdminBizImpl.registry(AdminBizImpl.java:126)
+	... 60 more
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at sun.reflect.GeneratedMethodAccessor79.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 66 more
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:82)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:68)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:338)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	... 70 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor65.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2197)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.GeneratedConstructorAccessor63.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:319)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:212)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:736)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:668)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.getConnection(ConnectionPool.java:198)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:132)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	... 78 more
+Caused by: java.net.SocketException: Network is unreachable (connect failed)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 97 more
+
+	at com.xxl.rpc.remoting.invoker.reference.XxlRpcReferenceBean$1.invoke(XxlRpcReferenceBean.java:221)
 	at com.sun.proxy.$Proxy57.registry(Unknown Source)
 	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:48)
 	at java.lang.Thread.run(Thread.java:748)
-2019-04-28 16:54:02,298 INFO [xxl-job, executor ExecutorRegistryThread] c.x.r.r.i.r.XxlRpcReferenceBean [XxlRpcReferenceBean.java : 225] >>>>>>>>>>> xxl-rpc, invoke error, address:http://127.0.0.1:8080/xxl-job-admin/api, XxlRpcRequestXxlRpcRequest{requestId='90b59774-456e-41a7-904a-71466258f973', createMillisTime=1556441632293, accessToken='', className='com.xxl.job.core.biz.AdminBiz', methodName='registry', parameterTypes=[class com.xxl.job.core.biz.model.RegistryParam], parameters=[RegistryParam{registGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='10.8.0.203:9999'}], version='null'}
-2019-04-28 16:54:02,305 INFO [xxl-job, executor ExecutorRegistryThread] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 57] >>>>>>>>>>> xxl-job registry error, registryParam:RegistryParam{registGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='10.8.0.203:9999'}
-com.xxl.rpc.util.XxlRpcException: xxl-rpc, request timeout at:1556441642298, request:XxlRpcRequest{requestId='90b59774-456e-41a7-904a-71466258f973', createMillisTime=1556441632293, accessToken='', className='com.xxl.job.core.biz.AdminBiz', methodName='registry', parameterTypes=[class com.xxl.job.core.biz.model.RegistryParam], parameters=[RegistryParam{registGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='10.8.0.203:9999'}], version='null'}
-	at com.xxl.rpc.remoting.net.params.XxlRpcFutureResponse.get(XxlRpcFutureResponse.java:117)
-	at com.xxl.rpc.remoting.invoker.reference.XxlRpcReferenceBean$1.invoke(XxlRpcReferenceBean.java:219)
-	at com.sun.proxy.$Proxy57.registry(Unknown Source)
-	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:48)
-	at java.lang.Thread.run(Thread.java:748)
-2019-04-28 16:54:42,316 INFO [xxl-job, executor ExecutorRegistryThread] c.x.r.r.i.r.XxlRpcReferenceBean [XxlRpcReferenceBean.java : 225] >>>>>>>>>>> xxl-rpc, invoke error, address:http://127.0.0.1:8080/xxl-job-admin/api, XxlRpcRequestXxlRpcRequest{requestId='a6948037-ea1c-4552-8d4b-024dc23ed8f6', createMillisTime=1556441672309, accessToken='', className='com.xxl.job.core.biz.AdminBiz', methodName='registry', parameterTypes=[class com.xxl.job.core.biz.model.RegistryParam], parameters=[RegistryParam{registGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='10.8.0.203:9999'}], version='null'}
-2019-04-28 16:54:42,317 INFO [xxl-job, executor ExecutorRegistryThread] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 57] >>>>>>>>>>> xxl-job registry error, registryParam:RegistryParam{registGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='10.8.0.203:9999'}
-com.xxl.rpc.util.XxlRpcException: xxl-rpc, request timeout at:1556441682315, request:XxlRpcRequest{requestId='a6948037-ea1c-4552-8d4b-024dc23ed8f6', createMillisTime=1556441672309, accessToken='', className='com.xxl.job.core.biz.AdminBiz', methodName='registry', parameterTypes=[class com.xxl.job.core.biz.model.RegistryParam], parameters=[RegistryParam{registGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='10.8.0.203:9999'}], version='null'}
-	at com.xxl.rpc.remoting.net.params.XxlRpcFutureResponse.get(XxlRpcFutureResponse.java:117)
-	at com.xxl.rpc.remoting.invoker.reference.XxlRpcReferenceBean$1.invoke(XxlRpcReferenceBean.java:219)
-	at com.sun.proxy.$Proxy57.registry(Unknown Source)
-	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:48)
-	at java.lang.Thread.run(Thread.java:748)
+2019-04-29 13:08:30,193 INFO [Thread-14] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java : 985] Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14d3bc22: startup date [Sun Apr 28 16:51:59 CST 2019]; root of context hierarchy
+2019-04-29 13:08:30,483 INFO [Thread-14] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java : 449] Unregistering JMX-exposed beans on shutdown
+2019-04-29 13:08:30,503 INFO [xxl-job, executor TriggerCallbackThread] c.x.j.c.thread.TriggerCallbackThread [TriggerCallbackThread.java : 96] >>>>>>>>>>> xxl-job, executor callback thread destory.
+2019-04-29 13:08:30,504 INFO [Thread-9] c.x.j.c.thread.TriggerCallbackThread [TriggerCallbackThread.java : 126] >>>>>>>>>>> xxl-job, executor retry callback thread destory.
+2019-04-29 13:08:30,509 INFO [Thread-10] com.xxl.rpc.remoting.net.Server [NettyHttpServer.java : 70] >>>>>>>>>>> xxl-rpc remoting server stop.
+2019-04-29 13:08:30,536 INFO [xxl-job, executor ExecutorRegistryThread] c.x.r.r.i.r.XxlRpcReferenceBean [XxlRpcReferenceBean.java : 225] >>>>>>>>>>> xxl-rpc, invoke error, address:http://127.0.0.1:8080/xxl-job-admin/api, XxlRpcRequestXxlRpcRequest{requestId='801b32c7-e8a9-42a3-bcd3-13230e5c365f', createMillisTime=1556514510510, accessToken='', className='com.xxl.job.core.biz.AdminBiz', methodName='registryRemove', parameterTypes=[class com.xxl.job.core.biz.model.RegistryParam], parameters=[RegistryParam{registGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='10.8.0.203:9999'}], version='null'}
+2019-04-29 13:08:30,537 INFO [xxl-job, executor ExecutorRegistryThread] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 105] >>>>>>>>>>> xxl-job, executor registry thread destory.
+2019-04-29 13:08:30,537 INFO [Thread-14] com.xxl.rpc.remoting.net.Server [NettyHttpServer.java : 106] >>>>>>>>>>> xxl-rpc remoting server destroy success.
