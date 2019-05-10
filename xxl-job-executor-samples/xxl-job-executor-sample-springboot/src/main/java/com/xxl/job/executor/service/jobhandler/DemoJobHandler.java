@@ -18,6 +18,8 @@ import java.util.concurrent.TimeUnit;
  * 3、注册到执行器工厂：添加“@JobHandler(value="自定义jobhandler名称")”注解，注解value值对应的是调度中心新建任务的JobHandler属性的值。
  * 4、执行日志：需要通过 "XxlJobLogger.log" 打印执行日志；
  *
+ * Simple example tasks，the internals of the task simulate the time-consuming task logic, users can experience online Rolling Log and other features.
+ *
  * @author xuxueli 2015-12-19 19:43:36
  */
 @JobHandler(value="demoJobHandler")

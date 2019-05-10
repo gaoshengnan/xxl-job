@@ -10,7 +10,18 @@ public class ShardingUtil {
 
     public static class ShardingVO {
 
-        private int index;  // sharding index
+        /**
+         * sharding index
+         *
+         * current sharding serial number (starting from 0)
+         * the serial number of the current executor in the list of executor clusters
+         */
+        private int index;
+        /**
+         *  sharding total
+         *
+         *  the total number of shards, the total number of machines in the executor clusters
+         */
         private int total;  // sharding total
 
         public ShardingVO(int index, int total) {
